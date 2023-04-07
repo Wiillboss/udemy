@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+    <head>
+        <title>Unidade 02 - Elemento Head</title>
+        <!--A tag META serve para passar informações de uma página para outra -->
+        <meta charset="utf-8">
+        
+        <!--META para indicar o nome do autor -->
+        <meta name="author"     content="Willian dos Santos Silva">
+        
+        <!--META para indicar o nome do do programa de onde foi feita -->
+        <meta name="generator"  content="Brackets">
+        
+        <!--META para indicar por quais nomes serão atribuidos as pesquisa na net  -->
+        <meta name="keywords"   content="HTML5, Curso HTML, Curso Front End, CSS">
+        
+        <!--META para indicar a descrição da página  -->
+        <meta name="description"content="Pagina do curso de HMTL5">
+        
+        
+        <meta name="application-name"content="imedia Brasil">
+        
+        <!--META para indicar atualização da página e o tempo de atualização 
+            e o content é o tempo de intervalo, neste caso é a cada 4 segundos
+        -->
+        <meta http-equiv="refresh" content="4">
+        
+        <script>
+            function sorteioNumero(){
+                resultado.innerHTML = Math.random() * 50;
+            }
+            window.onload = sorteioNumero;
+        
+        </script>
+              
+    </head>
+    <body>
+        <p id="resultado"></p>
+    </body>
+</html>
