@@ -2,23 +2,46 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Curso HTML5 Essencial</title>        
+        <title>Curso HTML5 Essencial</title>
+
+        <!--    1º Comentário
+             Esta aula teve como intuito fazer um CSS dentro do HEAD, diferente das aulas anteriores que o CSS estava sendo feito IN LINE.
+            Para inicar esse CSS foi criado uma CLASSE (class - como o nome (img-prato)) dentro da tag IMG e em seguida criado um SYTLE dentro do HEAD, dentro do STYLE deu início a configuração, para indentificar a classe dentro dele usase-se o PONTO (.) mais o nome da classe, dentro dela foi uma configuração para ficar ao lado DIREITO do texto que em em seguida, foi colocado um espaço de 10px do lado esquerdo da imagem e foi inserido uma borda solida preta de 1px.   -->
+        <style>
+            .img-prato{
+                float: right;
+                margin-left: 10px;
+                border: 1px solid black;
+            }
+
+            .limpando-do-lado-direito{
+                clear: both;
+            }
+        </style>
     </head>
-    
+
     <body>
 		<h1>Cafe Fontenebleu</h1>
         
 		<h2>Um ambiente agradável</h2>
 		<h3>Prato do dia</h3>
-        <img src="imagens/pato_laranja.JPG" width="250" height="250" 
-             title="Prato Pato com Laranja" 
-             alt="Foto de prato do pato com laranja">
-                              
+        <img src="imagens/pato_laranja.JPG" width="250" height="250"
+             title="Prato Pato com Laranja"
+             alt="Foto de prato do pato com laranja"
+             class="img-prato">
+
         <p>Descasque as batatas e cozinhe até ficarem al dente. Retire toda a polpa das laranjas e corte as cascas em tiras finas. Deixe ferver as cascas em uma panela, por cinco minutos, e coe-as. Repita o processo por 3 vezes para tirar o amargo da casca. Mas guarde a água da fervura e reserve as cascas. </p>
-      
-		<h4>Segredo do chef</h4>
+
+        <!--    2º Comentário
+            Após a criação da classe da imagem e sua configuração foi pensado para que o segundo paragrafo ficasse abaixo da linha da imagem, usando somente a tag (BR) iria pular apenas uma linha e não iria dar certo, foi então usado dentro da tag o CLEAR="BOTH", assim todo o segundo paragrafo foi para abaixo da linha da imagem, entretanto é preciso informar que essa ação não é mais usada nos tempos atuais -->
+
+        <!-- <br clear="both"> -->
+
+        <!--    3º Comentário
+            Para fazer a configuração  de deixar o segundo paragrafo abaixo da linha da imagem, foi criado uma classe dentro da tag (H4) com o nome (limpando-do-lado-direito), em seguinda foi chamado dentro do HEAD a classe e usado o (clear: both)-->
+        <h4 class="limpando-do-lado-direito">Segredo do chef</h4>
 		<p>Pincele todo o pato com óleo e tempere com sal e pimenta-do-reino a gosto. Em uma panela com um pouco de óleo, sele todos os lados do pato. Retire o pato e o óleo da panela, colocando a água da fervura da laranja com o açúcar na panela. Adicione o vinagre e mexa tudo até engrossar. Adicione o suco de 3 laranjas e o caldo de carne. </p>
-        
+
 		<p>Volte o pato na panela, regue-o com o molho da panela e deixe cozinhar por duas horas, sempre regando ele a cada 10 minutos. Após cozido, esprema mais uma laranja e um limao na panela e coloque as batatas, as cascas de laranja e tempere com salsinha por cima.</p>
 
 	</body>
