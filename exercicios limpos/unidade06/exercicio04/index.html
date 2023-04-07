@@ -5,12 +5,35 @@
         <title>Curso HTML5 Essencial</title>
         
         <style>
-			.foto {
+			/* 2º Comentário
+				Existe classe dentro do tag IMG com o nome de (foto), como foi comentado sua configuração dentro do HEAD, ela não vai funcionar, no seu lugar foi criado uma mesma configuração, entretanto foi destinada a tag FIGURE.
+			*/
+			
+			/* .foto {
 				float:right;
 				margin-left:15px;
 				border:1px solid #999;
 				padding:3px;
 				margin-bottom:10px;
+			} */
+
+			figure {
+				float:right;
+				margin-left:15px;
+				border:1px solid #999;
+				padding:3px;
+				margin-bottom:10px;
+			}
+
+			/* 3º Comentário
+				Foi adicinado uma configuração para a tag (FIGCAPTION)
+			*/
+			figcaption{
+				background-color: #ddd;
+				font-family: sans-serif;
+				font-style: 11px;
+				padding: 3px;
+				font-size: .9em;
 			}
 		</style>
         
@@ -22,10 +45,23 @@
         
 		<h2>Um ambiente agrad&aacute;vel</h2>
 		<h3>Prato do dia</h3>
-        
+        <!--	1º Comentário. 
+			Nesta aula foi orientado usar a tag (FIGURE) para colocar a as imagens dentro dela.
+			Para colar uma legenda da foto é usado a tag (FIGCAPTION)
+			Usando somente esses dois recursos e da forma que está o CSS do HEAD, ainda vai ficar bagunçado a legdenda da imagem e sua localizção, acompanhe o segundo comentário dentro do HEAD -->
 
-				<img 	src="imagens/cidade.jpg" 	width="250" height="250"  title="Foto do acesso ao hotel" 
-        				alt="Foto da rua do hotel" class="foto" >
+			<figure>
+				<img 	
+					src="imagens/cidade.jpg"
+					width="250" height="250"  
+					title="Foto do acesso ao hotel"
+					alt="Foto da rua do hotel"
+					class="foto"
+				>
+				<figcaption>
+					Foto da rua do hotel (Foto: André)
+				</figcaption>
+			</figure>
 
         <p>Cafe Fontenebleu's visionary chef leads the way in a culinary revolution. Proclaimed by many to be the best chef in the world today, Chef Bienni blends earthy seasonal flavors and bold ingredients to create exquisite contemporary cuisine. </p>
         <p>The name Cafe Fontenebleu comes from our first restaurant, located in a historic building on Fontenebleu Street in San Francisco, where we opened the doors in 1985. We've replicated the elegant interior, exceptional service, and world-class cuisine in our restaurants around the country.</p>
