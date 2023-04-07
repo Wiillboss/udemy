@@ -5,28 +5,39 @@
         <meta charset="ISO-8859-2">
         <title>Curso de HTML5 - Menu Vertical</title>
         
-        <style>
+        <style> 
 			body {
 				font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
 				font-size:13px;
 			}
-			
+			/* 1º Retirar a limitação de 200px. */
 			ul {
 				margin:0;padding:0;
-				width:200px;
+				/* width:200px; */
 			}
 			
+			/* 3º Inserir o (display: inline-block), isso vai deixar com que a lista fique com os itens um ao lado do outro. */
 			li {
 				list-style:none;
+				display: inline-block;
 			}
-			
+
+			/* 2º Retirar a limitação do (display: block). */
+
+			/* 4º aumentar o tamanho interno dos lados (padding) de 3px para 15px.
+				
+				***Lembrando que existe diversas configurações, top(para cima), bottom(para baixo), left(para esquernda), rigth(para direita), entretanto é possível economizar e ganhar tempo e linha de codigo usando resumo, um deles foi feito no PADDING, o primeiro valor (5px - neste caso) é atribuido tanto para cima como para baixo, o segundo valor (15px - neste caso) é atribuido tanto para esquerda como para direita.
+			*/
+
+			/* 5º Retirado 3px da margem do lado esquedo*/
 			li a {
-				display:block;
+				/* display:block; */
 				text-decoration:none;
 				color:#FFF;
 				background-color:#09C;
 				margin-bottom:1px;
-				padding:5px 3px;
+				padding:5px 15px;
+				margin-left: -3px;
 			}
 			
 			li a:hover {
@@ -35,7 +46,8 @@
         </style>
         
         </head>
-
+		<!-- Nesta aula foi feito um menu HORIZONTAL com a lista, acompanhe os comentários e sua ordem de leitura. 
+			OBS: esse exercício é uma cópia do exercício anterior, será ajustado de acordo com as configurações já feitas antes. -->
         <body>        
             <ul>
                 <li><a href="brasil.html">Brasil</a></li>
