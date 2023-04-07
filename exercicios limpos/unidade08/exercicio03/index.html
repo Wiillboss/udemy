@@ -11,25 +11,58 @@
 				font-size:13px;
 			}
 			
+            /* 1º Feito retirada da margem e paddin da lista não ordenada. */
+
+            /* 9º Adicionado um tamanho de 200px para a lista.
+                OBS: Esse tamanho foi necessário e determinado justamento por ter usado o (display: block) dentro do (li a) como visto no comentario (3º).*/
 			ul {
-				
+                margin: 0;
+                padding: 0;
+                width: 200px;				
 			}
-			
+
+			/* 2º Retirada dos pontos que listam a lista (exemplo 1,2,3 ... I,II,III ... etc). */
 			li {
-			
+                list-style: none;
+                
+			}
+
+			/* 3º Colocando o linha do link inteira como link.
+                 OBS: caso não tenha (display: block) o link fica apenas sobre a palavra a qual o envelopamento da tag (a), a inteção de deixar o display: block é para criar um menu que seja do mesmo tamanho para todos os itens da lista.
+            */
+
+            /* 4º Text-decoration: none é criado para retirar o sublinhado. 
+            OBS: ele é colocando na conf. de (li a) pois dentro do (li) tem o (a) e esse é quem carrega o link com o sublinhado.
+            */
+
+            /* 5º Adicionado uma cor azul. */
+
+            /* 6º Adicionado uma margem de 1px acima de todo item do (li a). */
+
+            /* 7º Adicionado uma margem interna de 5px tanto para cima como para baixo e 3px para ambos os lados.
+                OBS: Quando se coloca apenas 2 valores, o primeiro sinaliza que é para CIMA e para BAIXO, o segundo valor é para AMBOS os lados. 
+            */
+
+            /* 8º Adicionado uma cor branca para a fonte. */
+
+
+            li a {
+				display: block;
+                text-decoration: none;
+                background-color: #09c;
+                margin-top: 1px;
+                padding: 5px 3px;
+                color: white;                
 			}
 			
-			li a {
-				
-			}
-			
+            /* 10º Adicionado uma cor azul claro ao passar o mouse por cima do menu. */
 			li a:hover {
-			
+                background-color: #6ef;
 			}
         </style>
         
         </head>
-
+        <!-- Nesta aula foi feito um menu VERTICAL com a lista, acompanhe os comentários e sua ordem de leitura. -->
         <body>        
             <ul>
                 <li><a href="brasil.html">Brasil</a></li>
