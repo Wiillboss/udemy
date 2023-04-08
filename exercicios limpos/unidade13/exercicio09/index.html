@@ -3,11 +3,39 @@
     <head>
         <meta charset="UTF-8">
         <title>Curso HTML5 Essencial</title>
+        <!-- 1º Comentário
+            document.getElementById('resultado') 
+            A parte do código acima siginifica: pegue um resultado de um valor de um campo, no caso o ID="resultado" dentro da tag SPAN
+        -->
+
+        <!-- 2º Comentário
+            .innerHTML 
+            A parte do código acima significa: faz o preenchimento do campo -->
+
+        <!-- 3º Comentário
+            document.getElementById("I_filhos").value;
+            A parte do código acima significa: faz com que se pegue o valor do campo selecionado no input e acidione do [ document.getElementById('resultado') ]-->
+        <script>
+            function mostrarResultado(){
+                document.getElementById('resultado').innerHTML = document.getElementById("I_filhos").value;
+            }
+
+        </script>
+
     </head>
 
     <body>
         <form action="index.html" method="post">
-            
+            <!-- O Value indica com quem valor o range inicia, neste nosso caso ele indica que inicia com o valor 1.  -->
+            <!-- Somente o input feito não é possível visualizar o valor onde ele está possicionado,
+                     para mostrar esse valor é necessário JS.
+             -->
+                
+            <!-- 4º Comentário
+                Necessário agora chamar a função (mostrarResultado) dentro de (onchange). -->
+
+            <input type="range" name="filhos" id="I_filhos" min="1" max="10" value="1" onchange="mostrarResultado()">
+            <span id="resultado"></span>
         </form>
     </body>
 </html>
