@@ -2,7 +2,27 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
+
+       // Quando feito uso do (WHILE), a condição é verificada primeiro e depois é feito o comando 
+            var i = 1;
+            while(i<10){
+                console.log("Exemplo do WHILE - Passo: " + i);
+                i++;
+            }
+
+        // No caso do (DO WHILE), é feito o comando primeiro (pelo menos uma vez) e em seguida é verificado, nesse caso especifico o primeiro passo foi realizado mesmo não atendendo os requisitos que eram (D<10) onde (D) já tem início valendo 10. 
+            var d = 10;
+            do{
+                console.log("Exemmplo do DO WHILE - Passo: " + d);
+                d++;
+            } while(d<10)   
+            
+        // No caso do (FOR),  a variavel é declarada (iniciada), em seguida é feito o teste lógico e no final o incremento ou decremento.
+        for (var f=0; f<10 ; f++ ){
+            console.log("Exemplo do FOR - Passo: " +f);
+        }
         
+        // Lembrando que os passos (incremento ou decremento) pode ser feito em mais de um tipo como: incremento de 2 em 2(i+=2), incremento de 4 em 4 (i+=4), decremento de 4 em 4(i-=4), incremento de 3 em 3(d+=3), decremento de 5 em 5(f-=5). 
         </script>
     </head>
     <body>

@@ -1,8 +1,18 @@
 <html>
     <head>
         <title>Aulas de Javascript</title>
+        <!-- 
+            Math.round - Arredonda para MÈDIA
+            Math.ceil - Arredonda para SEMPRE PARA CIMA
+            Math.floor - Arredonda para SEMPRE PARA BAIXO
+            return (2000/30).toFixed (2) - serve para indicar quantas casas decimais deseja fixar, neste caso são duas.
+        -->
         <script>
-
+            function calcularDiaria(){
+                return Math.floor (2000/30);
+            }
+            var diaria = calcularDiaria();
+            alert(diaria);
         </script>
     </head>
     <body>

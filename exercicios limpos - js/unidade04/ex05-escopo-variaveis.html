@@ -1,13 +1,17 @@
 <html>
     <head>
         <title>Aulas de Javascript</title>
+
+        <!-- Quando se quer uma variável GLOBAL, deve-se criar ela fora da função, caso contrário ela só é vista dentro da função. -->
         <script>
+            var bonus;
             function calcularDiaria(salario,dias) {
+                bonus = 3000;
                 return (salario/dias).toFixed(2);    
             }
             
             var diaria = calcularDiaria(8000,30);
-            alert(diaria);
+            alert("O valor da diária é R$: "+ diaria +". Já o valor do bonus é R$: "+bonus);
         </script>
     </head>
     <body>
