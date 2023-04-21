@@ -1,12 +1,23 @@
 <html>
     <head>
         <title>Aulas de Javascript</title>
+        <!-- O SORT não funciona com números como funciona com strigns (letras), necessário criar uma certa função.  -->
         <script>
             var salada = new Array();
             salada[0] = "Uva";
             salada[1] = "Mamão";
             salada[2] = "Pêra";
-            salada[3] = "Maçã";        
+            salada[3] = "Maçã";
+            salada.push("Abacate"); 
+            salada.sort();
+            console.log(salada);
+
+            function ordenarNumeros(a,b){
+                return a-b;
+            }
+            var megasena = new Array(43, 10, 3, 37, 11, 59, 27, 14, 2, 12, 1, 29 );
+            megasena.sort(ordenarNumeros);
+            console.log(megasena);
         </script>
     </head>
     <body>
