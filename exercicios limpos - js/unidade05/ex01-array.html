@@ -1,8 +1,29 @@
 <html>
     <head>
         <title>Aulas de Javascript</title>
+
+        <!-- O array serve para colocar diversos valores em ordem dentro de uma única variável
+             Abaixo está descrita 3 formas de se declarar e empreencher um Array
+             No primeiro é criado uma variável (var saladaDeFruta), em seguida ela é inicializada ( new Array() ), em seguida é dado um valor a cada pocição tendo início da pocição zero (0), o ALERT foi feito para mostrar uma pocição especifica do ARRAY.
+             No segundo os valores são criados dentro do parentes, assim ganhando mais tempo.
+             No terceiro ganha mais tempo sem ter a necessidade de declarar o array.    -->
         <script>
-        
+            var saladaDeFruta = new Array();
+            saladaDeFruta[0] = "Uva";
+            saladaDeFruta[1] = "Laranja";
+            saladaDeFruta[2] = "Banana";
+            console.log(saladaDeFruta);
+            alert("Fruta preferida: " + saladaDeFruta[2]);
+
+            var verduras = new Array("Alface", "Tomate", "Cebola");
+            console.log(verduras);
+            alert("Verdura preferida: " + verduras[1]);
+
+            var times = ["Palmeiras", "Santos", "Fluminense"];
+            console.log(times);
+            alert("Melhor time do mundo: " + times[0]);
+
+            
         </script>
     </head>
     <body>
