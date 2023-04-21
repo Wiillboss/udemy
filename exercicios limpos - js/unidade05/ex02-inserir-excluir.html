@@ -1,12 +1,44 @@
-<html>
-    <head>
-        <title>Aulas de Javascript</title>
-        <script>
-            var salada = ["Uva","Banana","Pera"] ;
-            console.log(salada);
-        </script>
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas de Javascript</title>
+
+    <!-- Adicionando um novo elemento NO FINAL do Array (PUSH) ou NO INÌCIO (UNSHIFT):
+                1º indique qual o Array onde vai ser inserido (saladaDeFruta),
+                2º use ponto(.), em seguida o PUSH (para adicionar ao final) ou UNSHIFT (para adicionar ou inicio).
+                3º dentro dos parenteses e aspas, indique o nome no novo elemento ("Pera") ("Kiwi") etc.
+            
+         Excluindo um elemento NO FINAL do Array (POP) ou NO INÌCIO (SHIFT):
+                1º indique qual o Array onde vai ser inserido (times),
+                2º use ponto(.), em seguida o POP (para excluir ao final) ou SHIFT (para excluir no inicio).
+                3º dentro dos parenteses e aspas, indique o nome no novo elemento ("Pera") ("Kiwi") etc.   -->
+                <script>
+                    var saladaDeFruta = new Array();
+                    saladaDeFruta[0] = "Uva";
+                    saladaDeFruta[1] = "Laranja";
+                    saladaDeFruta[2] = "Banana";
+                    console.log(saladaDeFruta);
+                    saladaDeFruta.push("Pera");
+                    saladaDeFruta.unshift("Kiwi");
+                    alert("Fruta preferida: " + saladaDeFruta[2]);
+                    
+                    
         
-    </body>
+                    var verduras = new Array("Alface", "Tomate", "Cebola");
+                    console.log(verduras);
+                    alert("Verdura preferida: " + verduras[1]);
+        
+                    var times = ["Flamengo","Palmeiras", "Santos", "Fluminense", "Real Madri"];
+                    times.pop();
+                    times.shift();
+                    console.log(times);
+                    alert("Melhor time do mundo: " + times[0]);
+                </script>
+</head>
+<body>
+    
+</body>
 </html>
