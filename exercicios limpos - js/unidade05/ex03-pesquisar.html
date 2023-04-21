@@ -1,15 +1,24 @@
-<html>
-    <head>
-        <title>Aulas de Javascript</title>
-        <script>
-            var salada = new Array();
-            salada[0] = "Uva";
-            salada[1] = "Mamão";
-            salada[2] = "Pêra";
-            salada[3] = "Maçã";
-        </script>
-    </head>
-    <body>
-        
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <!-- Pesquisa dentro do Array usamos o INDEXOF, ele é caseSensetive e quando não tem o item ele mostra o resulta menos um (-1) -->
+    <script>
+        var salada = new Array();
+        salada[0] = "Uva";
+        salada[1] = "Mamão";
+        salada[2] = "Pêra";
+        salada[3] = "Maçã";
+
+        var pesquisa = salada.indexOf("Uva");
+        alert(" A posição da fruta é: " + pesquisa);
+        console.log(pesquisa);
+    </script>
+</head>
+<body>
+    
+</body>
 </html>
