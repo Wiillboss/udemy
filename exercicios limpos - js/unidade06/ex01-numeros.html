@@ -1,9 +1,30 @@
 <html>
     <head>
         <title>Aulas de Javascript</title>
+        <!-- Aqui temos 3 casos de aprendizagem
+            1º usandos o (Math.max) para indetificar o maior número dentro de um array. 
+            2º usandos o (Math.min) para indetificar o menor número dentro de um array. 
+            3º conversão de uma variável com string para number.
+         -->
         <script>
-            
-        </script>
+            var x = 4;
+            var y = 3;
+            var z = 7;
+
+            alert("O maior número é: " + Math.max(x,y,z));
+            console.log(Math.max(x,y,z));
+
+            alert("O menor número é: " +Math.min(x,y,z));
+            console.log(Math.min(x,y,z));
+
+
+            var numero = "4";
+            var calculo;
+
+            calculo = Number (numero) * 2;
+            alert("A string convertida e multiplicada por 2 é: " + calculo);
+            console.log(calculo);
+            </script>
     </head>
     <body>
         
