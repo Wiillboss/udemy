@@ -1,8 +1,38 @@
 <html>
     <head>
-        <title>Aulas de Javascript</title>
+        <title>Aulas de Javascript - Criação de um sorteio mega sena.</title>
         <script>
+            //1º L16 - Criar uma VAR  
+            //2º L17 - Criar um Array
+            //3º L18 - Criar uma VAR que inicia com valor zero (0) para ser varrida dentro do loop 
+            //4º L20 - Criar um loop onde determinar que vai acontecer enquanto a VAR para loop for menor que o valor escolhido. 
+            //5º L22 - A primeira VAR criada vai receber um número aleatório entre 1 e 60 (Math.random()*60) e vai arredondar para cima (Math.ceil)  
+            //6º L24 - Criar um IF para que o número sorteado não se repita.
+            //Explicação do IF: É feito uma pesquisa dentro do ARRAY (mega.indexOf) para indentificar se a VAR que recebeu o número        aleatório (sorteio) é menor que zero (<0), caso a condição seja verdadeira o número sorteado é inserido no final do ARAAY (mega.push(sorteio)) e em seguida é adicionado um número na VAR do contador (i++)   
+            //7º L29 - Criar uma função para ordenar os números sorteados de forma correta, visto que somente o (SORT) não funciona corretamente para números como funciona para alfabeto 
+            //8º L33 - Usar a função de ordenar números dentro do array 
+            //9º L34 - Exibindo o resultado no console
+            
+            var sorteio;  
+            var mega = new Array();
+            var i=0;
 
+            while(i<6){
+
+                sorteio = Math.ceil(Math.random()*60);
+
+                if(mega.indexOf(sorteio) < 0){
+                    mega.push(sorteio);
+                    i++;
+                }
+
+                function ordenaNumeros(a,b){
+                    return a-b;
+                }
+            }
+            mega.sort(ordenaNumeros);
+            console.log(mega);
+            alert("Os números sorteados são: "+mega);
         </script>
     </head>
     <body>
