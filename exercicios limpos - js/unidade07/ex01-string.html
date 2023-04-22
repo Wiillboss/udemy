@@ -1,11 +1,34 @@
-<html>
-    <head>
-        <title>Aulas de Javascript</title>
-        <script>
-            
-        </script>
-    </head>
-    <body>
-        
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de String - JS</title>
+    <!-- CharAt serve para buscar um caracter dentro de uma VAR com string -->
+
+    <!-- Explicando WHILE, enquanto a VAR (letra) for diferente a um espaco (" ") faça:
+        L20. VAR (letra) esta recebendo uma busca do charArt dentro da VAR (frase) na posição do momento atual (zero (0)).
+        L21. VAR (primeira_palavra) esta recendo e concatenando o que vem da VAR (letra).
+        L22. VAR (i) está sendo incrementada
+        OBS: Esse WHILE vai ficar continuar até que a VAR (letra) indentifique um espaço. -->
+    <script>
+        var frase = "Willian dos Santos Silva";
+        var primeira = frase.charAt(0);
+
+        var letra = "";
+        var primeira_palavra = "";
+        var i = 0;
+        while (letra != " "){
+            letra = frase.charAt(i);
+            primeira_palavra += letra;
+            i++
+        }
+        alert(primeira_palavra);
+        console.log(primeira_palavra);
+    </script>
+</head>
+<body>
+    
+</body>
 </html>
