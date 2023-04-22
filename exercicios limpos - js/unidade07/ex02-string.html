@@ -1,11 +1,28 @@
-<html>
-    <head>
-        <title>Aulas de Javascript</title>
-        <script>
-            
-        </script>
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas JS - </title>
+    <!-- SUBSTR busca uma quantidade de caracteres de acordo com os paramentros definidos, deve-se indicar onde tem início e o fim da busca. -->
+    <script>
+        var nome = "Willian dos Santos Silva";
+        var primeira = "";
+        var letra = "";
+        var i = 0;
+        while(letra != " "){
+            letra = nome.charAt(i);
+            primeira = nome.substr(0,i);
+            i++;
+        }
         
-    </body>
+        
+        alert(primeira);
+        console.log(primeira);
+    </script>
+</head>
+<body>
+    
+</body>
 </html>
