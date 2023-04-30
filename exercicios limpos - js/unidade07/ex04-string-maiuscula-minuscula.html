@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Aulas de Javascript</title>
+
+        <!-- CharAt serve para buscar um caracter dentro de uma VAR com string -->
+        <!-- SUBSTR busca uma quantidade de caracteres de acordo com os paramentros definidos, deve-se indicar onde tem início e o fim da busca. -->
+        <!-- SPLIT divide a frase, tradicionalmente se escolhe o ESPAÇO como paranmetro, mas pode-se escolhe o que quiser. -->
+        <!-- toUpperCase serve para deixar as letras MAIUSCULAS -->
+        <!-- toLowerCase serve para deixar as letras minusculas -->
+
+
+        <!-- Explicando o terciero exemplo: 
+            L25 - Atribuido um nome para a VAR (NOME3)
+            L26 - Criado VAR (letras_Minusculas) para receber todos os valores convertidos para minusculo da VAR (NOME3)
+            L27 - Criado VAR (primeira_Letra) que esta recebendo uma conversão para maiusculo da primeira letra da VAR (letras_Minusculas)
+            L28 L29 - Exibindo o valor da VAR (primeira_Letra) concatenado com a VAR (letras_Minusculas) que está recebendo uma busca apartir da segunda letra até o tamanho total da mesma VAR. -->
+        <script>
+            var nome = "willian dos santos silva";
+            var nome2 = "Gael Marques Ribeiro DOS SANTOS SILVA"
+            alert(nome.toUpperCase());
+            console.log(nome.toUpperCase());
+            alert(nome2.toLowerCase());
+            console.log(nome2.toLowerCase());
+
+            var nome3 = "ROBerta RIBeirO dOS sAnTos"
+            var letras_Minusculas = nome3.toLowerCase();
+            var primeira_Letra = letras_Minusculas.charAt(0).toUpperCase();
+            alert(primeira_Letra + letras_Minusculas.substr(1,letras_Minusculas.length));
+            console.log(primeira_Letra + letras_Minusculas.substr(1,letras_Minusculas.length));
+
+            var primeiro_nome = primeira_Letra + letras_Minusculas.substr(1,letras_Minusculas.length);
+            //alert(primeiro_nome.split(" "[0]));
+            console.log(primeiro_nome.split(" "[0]));
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
