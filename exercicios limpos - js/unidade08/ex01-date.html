@@ -2,7 +2,20 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
+            var agora = new Date();
+            
+            console.log("Estamos no ano: " + agora.getFullYear());
+            
+            var mes = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"]
+            console.log("Estamos no mês: " + agora.getMonth() + ". O que significa que estamos em: " + mes[agora.getMonth()]);
+            
+            console.log("A hora agora é: " + agora.getHours() + " e os minutos: " + agora.getMinutes());
+            
+            var semana = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
+            console.log("Estamos no dia da semana: " + semana[agora.getDay()]);
 
+            var aniversario = new Date(1987, 4, 31);
+            console.log("Willian nasceu em um(a) " + semana[aniversario.getDay()]);
             
         </script>
     </head>
