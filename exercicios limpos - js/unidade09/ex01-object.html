@@ -1,11 +1,33 @@
-<html>
-    <head>
-        <title>Aulas de Javascript</title>
-        <script>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula JavaScript - Aula sobre OBJETO</title>
 
-        </script>
-    </head>
-    <body>
+    <script>
+        var produto = new Object();
+
+        produto.nome = "Caneta";
+        produto.preco = 1.99;
+        produto.cor = "Azul";
+
+        console.log("O nome do produto é: " + produto.nome);
+        console.log("O preço do produto é: " + produto.preco);
+        console.log("A cor do produto é: " + produto.cor);
+
+        var palmeiras = {goleiro:"Veloso", altura:1.94, lateral:"Arce", armador:"Rivaldo", atacante:"Edmundo"}
+
+        console.log("Nome do goleiro: " + palmeiras.goleiro)
+        console.log("Altura do goleiro: " + palmeiras.altura)
+        console.log("Nome do lateral: " + palmeiras.lateral)
+        console.log("Nome do armador: " + palmeiras.armador)
+        console.log("Nome do atacante: " + palmeiras.atacante)
         
-    </body>
+    </script>
+</head>
+<body>
+    
+</body>
 </html>

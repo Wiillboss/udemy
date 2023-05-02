@@ -1,11 +1,28 @@
-<html>
-    <head>
-        <title>Aulas de Javascript</title>
-        <script>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Aula sobre Objeto</title>
+    <script>
+        var produto = new Object();
 
-        </script>
-    </head>
-    <body>
-        
-    </body>
+            produto.nome = "Caneta";
+            produto.preco = 1.99;
+            produto.cor = "Azul";
+
+            function retornaInfo(){
+                return "O produto escolhido foi: " + this.nome + ", seu valor é: " + this.preco + " e sua cor é: " + this.cor;
+            }
+
+            produto.info = retornaInfo;
+
+            alert(produto.info());
+
+    </script>
+</head>
+<body>
+    
+</body>
 </html>
