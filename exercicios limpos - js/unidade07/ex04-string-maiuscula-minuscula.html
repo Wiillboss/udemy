@@ -10,10 +10,10 @@
 
 
         <!-- Explicando o terciero exemplo: 
-            L25 - Atribuido um nome para a VAR (NOME3)
-            L26 - Criado VAR (letras_Minusculas) para receber todos os valores convertidos para minusculo da VAR (NOME3)
-            L27 - Criado VAR (primeira_Letra) que esta recebendo uma conversão para maiusculo da primeira letra da VAR (letras_Minusculas)
-            L28 L29 - Exibindo o valor da VAR (primeira_Letra) concatenado com a VAR (letras_Minusculas) que está recebendo uma busca apartir da segunda letra até o tamanho total da mesma VAR.
+            L26 - Atribuido um nome para a VAR (NOME3)
+            L27 - Criado VAR (letras_Minusculas) para receber todos os valores convertidos para minusculo da VAR (NOME3)
+            L28 - Criado VAR (primeira_Letra) que esta recebendo uma conversão para maiusculo da primeira letra da VAR (letras_Minusculas)
+            L29 L30 - Exibindo o valor da VAR (primeira_Letra) concatenado com a VAR (letras_Minusculas) que está recebendo uma busca apartir da segunda letra até o tamanho total da mesma VAR.
             OBS: TODA vez que for usar o SPLIT, caso for mostrar o indice (a posição []), SEMPRE O MOSTRE FORA dos parenteses.  -->
         <script>
             var nome = "willian dos santos silva";
@@ -29,6 +29,8 @@
             alert(primeira_Letra + letras_Minusculas.substr(1,letras_Minusculas.length));
             console.log(primeira_Letra + letras_Minusculas.substr(1,letras_Minusculas.length));
 
+            // Criado VAR (primeiro_nome) que recebe valor da VAR (primeira_Letra) concatenado com a VAR (letras_Minusculas) que está recebendo uma busca apartir da segunda letra até o tamanho total da mesma VAR.
+            //OBS: TODA vez que for usar o SPLIT, caso for mostrar o indice (a posição []), SEMPRE O MOSTRE FORA dos parenteses.
             var primeiro_nome = primeira_Letra + letras_Minusculas.substr(1,letras_Minusculas.length);
             alert(primeiro_nome.split(" ")[0]);
             console.log(primeiro_nome.split(" ")[0]);
