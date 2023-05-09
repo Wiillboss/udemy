@@ -1,19 +1,26 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Curso jQuery Fundamental</title> 
-        
-        <script>
-			function inicial() {
-                alert("Página carregada com sucesso")
-            }
-            
-            window.onload = inicial;
-		</script>
-    </head>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Carregando a biblioteca jQuery -->
+    <script src="jquery-3.2.1.min.js"></script>
+    <script>
 
-    <body>
-	  
-    </body>
+        //A difirença de ambos é a diminuição do código. 
+        jQuery(document).ready(function(e) {
+            alert("Pronto, seu DOM foi carregado.")
+        })
+        
+        $(function(f){
+            alert("Diminuindo o código.")
+        })
+    </script>
+    <title>Curso jquery Fundamental</title>
+</head>
+<body>
+    
+</body>
 </html>
