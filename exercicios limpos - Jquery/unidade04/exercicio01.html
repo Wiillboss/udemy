@@ -12,7 +12,10 @@
         <script src="jquery-3.2.1.min.js"></script>
         <script>
 			$( function(e) {
-
+                $("<li><figcaption>Foto 4</figcaption><img src='imagem/foto4.jpg'></li>").insertAfter("li:last-child")
+                $("<li><figcaption>Foto 5</figcaption><img src='imagem/foto5.jpg'></li>").insertBefore("li:last-child")
+                $("<li><figcaption>Foto 6</figcaption><img src='imagem/foto6.jpg'></li>").insertBefore("li:first-child")
+                $("<li><figcaption>Foto 6.1</figcaption><img src='imagem/foto6.jpg'></li>").insertBefore("li:nth(2)")
 			} )
 		
 		</script>
@@ -21,9 +24,9 @@
 
     <body>
 		<ul>
-        	<li><img src="imagem/foto1.jpg"></li>
-            <li><img src="imagem/foto2.jpg"></li>
-            <li><img src="imagem/foto3.jpg"></li>
+        	<li><figcaption>Foto 1 - fixa</figcaption><img src="imagem/foto1.jpg"></li>
+            <li><figcaption>Foto 2 - fixa</figcaption><img src="imagem/foto2.jpg"></li>
+            <li><figcaption>Foto 3 - fixa</figcaption><img src="imagem/foto3.jpg"></li>
             
         </ul>
 
