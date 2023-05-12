@@ -7,22 +7,39 @@
         <script src="jquery-3.2.1.min.js"></script>
         <script>
 			$(function(e) {
-				
+
+                // excluindo o primeiro elemento
+				$("li:first").remove()
+
+                // excluindo o último elemento
+				$("li:last").remove()
+
+                // excluindo um elemento com CLASS
+                $("li.especifico").remove()
+                
+                // excluindo um elemento com ID
+                $("li#especifico_id").remove()
+
+                // Quando for fazer uso do (nth), leve em consideração para contagem apenas os elementos que aparecendo no momento atual da WEB
+                $("li:nth(3)").replaceWith("<li>Curso BootStrap Fundamental</li>")
+                
+                // Envopando uma tag
+                $("ul").wrapAll("<div style='border:5px solid #ccc'></div>")
 			})
 		</script>        
     </head>
-
-    <body>
-    	
-      
+    <body> 
 		<ul>
-        		
+            <li>teste para exercicio (first)</li>
+            <li id="especifico_id">teste para exercicio (com ID 01)</li>
             <li>Curso HTML5 Essencial</li>
             <li>Curso CSS3 Essencial</li>
+            <li class="especifico">teste para exercicio (com classe 01)</li>
             <li>Curso Javascript Essencial</li>
+            <li>Curso Javascript Essencial (teste para renomear )</li>
             <li>Curso jQuery Fundamental</li>
+            <li class="especifico">teste para exercicio (com classe 02)</li>
+            <li>teste para exercicio (last)</li>
         </ul>
-        
     </body>
-
 </html>
