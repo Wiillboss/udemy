@@ -10,6 +10,26 @@
                     $('#cursohtml').click(function(){
                         alert("Clicou no botão HTML");
                     })
+
+                    $('#cursocss').click(function(){
+                        alert("Clicou no botão CSS");
+                    })
+
+                    $('#cursojavascript').on("mouseover", function(){
+                        alert("Passou o mouse sobre o botão de JavaScript");
+                    })
+
+                    function mostraMensagem(){
+                        alert("Passou o mouse em cima do botão de jQuery")
+                    }
+
+                    $('#cursojquery').on("mouseover", mostraMensagem)
+                    
+                    function mostraMensagem2(){
+                        alert("Vai passar o mouse em cima do botão jQuery II apenas uma vez")
+                        $('#cursojqueryII').off("mouseover", mostraMensagem2)
+                    }
+                    $('#cursojqueryII').on("click", mostraMensagem2)
                 })	
 		</script>        
     </head>
@@ -17,7 +37,9 @@
     <body>
         <input type="button" id="cursohtml" value="Curso HTML5" />
         <input type="button" id="cursocss" 	value="Curso CSS3" />
-        
+        <input type="button" id="cursojavascript" value="Curso JavaScript">
+        <input type="button" id="cursojquery" value="Curso jQuery">
+        <input type="button" id="cursojqueryII" value="Curso jQuery II">
         
     </body>
 
